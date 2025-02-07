@@ -15,7 +15,7 @@ const runner = require('./test-runner');
 const app = express();
 
 // Connect to MongoDB
-const MONGO_URI = 'mongodb+srv://mjisaksson:eCDToYU0lKjt5hdI@cluster0.ng9rt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const MONGO_URI = 'mongodb+srv://mjisaksson:<password_hidden>@cluster0.ng9rt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.error('MongoDB connection error:', err));
